@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    float a,tax1,tax2,tax3,totaltax,sal1,sal2,sal3;
+    scanf("%f",&a);
+    if(a>=0.00&&a<=2000.00){
+        printf("Isento\n");
+    }
+        else if(a>=2000.01&&a<=3000.00){
+            sal1=(a-2000);
+            tax1=(sal1*0.08);
+            printf("R$ %.2f\n",tax1);
+        }
+        else if(a>=3000.01&&a<=4500.00){
+            tax1=(1000.0*0.08);
+            sal2=(a-3000.00);
+            tax2=(sal2*0.18);
+            totaltax=(tax1+tax2);
+            printf("R$ %.2f\n",totaltax);
+        }
+        else if(a>4500.00){
+            tax1=(1000.0*0.08);
+            tax2=(1500.0*0.18);
+            sal3=(a-4500);
+            tax3=(sal3*0.28);
+            totaltax=(tax1+tax2+tax3);
+            printf("R$ %.2f\n",totaltax);
+        }
+    return 0;
+}
