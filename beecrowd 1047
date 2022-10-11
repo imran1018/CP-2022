@@ -1,0 +1,53 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d,hr,min;
+    scanf("%d%d%d%d",&a,&c,&b,&d);
+    if(d>c){
+        min=d-c;
+         if(b>a)
+        {
+            hr=b-a;
+            printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",hr,min);
+        }
+         else if(a>b)
+        {
+            hr=(24-a)+b;
+            printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",hr,min);
+        }
+        else if(a==b)
+        {
+            printf("O JOGO DUROU 24 HORA(S) E %d MINUTO(S)\n",min);
+        }
+    }
+    else if(c==d){
+        if(a==b){
+            printf("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)\n");
+        }
+        else if(a>b){
+            hr=(24-a)+b;
+            printf("O JOGO DUROU %d HORA(S) E 0 MINUTO(S)\n",hr);
+        }
+        else if(b>a){
+            hr=b-a;
+            printf("O JOGO DUROU %d HORA(S) E 0 MINUTO(S)\n",hr);
+
+        }
+    }
+    else if(c>d){
+        min=(d+60)-c;
+        if(a==b){
+            hr=(24-1);
+            printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",hr,min);
+        }
+        else if(a>b){
+            hr=((24-a)+b)-1;
+            printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",hr,min);
+        }
+        else if(b>a){
+            hr=(b-a)-1;
+            printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",hr,min);
+        }
+    }
+    return 0;
+}
