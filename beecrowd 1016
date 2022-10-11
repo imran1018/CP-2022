@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int a,mint;
+    scanf("%d",&a);
+    mint = a*2;
+    printf("%d minutos\n",mint);
+    return 0;
+
+}
+
+
