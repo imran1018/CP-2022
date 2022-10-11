@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int n,sum=0,c=0;
+    double avg;
+    while(1){
+        scanf("%d\n",&n);
+        if(n>0){
+            c++;
+            sum=sum+n;
+        else{
+            break;
+        }
+
+    }
+    avg = sum/c ;
+    printf("%.1lf\n",avg);
+    return 0;
+}
