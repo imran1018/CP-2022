@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int id,hour;
+    double perhr,salary;
+    scanf("%d%d%lf",&id,&hour,&perhr);
+    printf("NUMBER = %d\n",id);
+    salary = (hour*perhr);
+    printf("SALARY = U$ %.2lf\n",salary);
+    return 0;
+
+}
