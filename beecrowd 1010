@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+   double code1,code2,unit1,unit2,price1,price2, vap;
+scanf("%lf%lf%lf\n",&code1,&unit1,&price1);
+scanf("%lf%lf%lf",&code2,&unit2,&price2);
+vap = ((unit1*price1)+(unit2*price2));
+printf("VALOR A PAGAR: R$ %.2lf\n",vap);
+return 0;
+}
