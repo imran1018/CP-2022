@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    long long n,s;
+    scanf("%lld",&n);
+    if(1<=n && n<=10000000000)
+    {
+        s=(n*(n+1))/2;
+        printf("%lld",s);
+    }
+    return 0;
+}
